@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "131734239157",
+    "project_id": "medster-692ff",
+    "storage_bucket": "medster-692ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131734239157:android:44c0b56d7920abc2088bfc",
+        "android_client_info": {
+          "package_name": "com.aatmik.medster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131734239157-8u30ufllcm9rpqo2tgmq7mmvi8ukvkk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aatmik.medster",
+            "certificate_hash": "ad6e90d0cfd0e60f6d6b5421f99b73d9457cd2de"
+          }
+        },
+        {
+          "client_id": "131734239157-vhkpe7d9f8fk7qqoru67u19lco6p0kfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdIsnGPiFTrO7W6v4pAMA0QqEQAWW3cDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131734239157-vhkpe7d9f8fk7qqoru67u19lco6p0kfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

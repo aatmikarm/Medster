@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangular_border"
+    android:padding="10dp"
+    android:id="@+id/rating_frag_full_cl"
+    tools:context=".ratingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rating_frag_cl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rating_frag_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/rating_frag_review_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/rating_frag_rb"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="@color/light"
+                    android:rating="4"
+                    android:stepSize="0.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rating_frag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="4.5"
+                    android:textColor="@color/light"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rating_frag_rb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/rating_frag_rb"
+                    app:layout_constraintTop_toTopOf="@+id/rating_frag_rb" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/rating_frag_review_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="538 Ratings and 44 Reviews"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rating_frag_cv"
+            app:layout_constraintStart_toStartOf="@+id/rating_frag_cv"
+            app:layout_constraintTop_toBottomOf="@+id/rating_frag_cv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rating_frag_cl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/rating_frag_cl"
+        app:layout_constraintTop_toTopOf="@+id/rating_frag_cl"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableRight="@drawable/ic_star"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:text="5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/rating_frag_5_pb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+            android:layout_marginLeft="5dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:text="4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/rating_frag_4_pb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:text="3"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toStartOf="@+id/rating_frag_3_pb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:text="2"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView16"
+            app:layout_constraintEnd_toStartOf="@+id/rating_frag_2_pb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/light"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:text="1"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rating_frag_1_pb"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/rating_frag_5_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:progress="90"
+            android:progressDrawable="@drawable/rounded_pb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/review_frag_5_tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <ProgressBar
+            android:id="@+id/rating_frag_4_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:progress="70"
+            android:progressDrawable="@drawable/rounded_pb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toStartOf="@+id/review_frag_4_tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+        <ProgressBar
+            android:id="@+id/rating_frag_3_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:progress="50"
+            android:progressDrawable="@drawable/rounded_pb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toStartOf="@+id/review_frag_3_tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <ProgressBar
+            android:id="@+id/rating_frag_2_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:progress="30"
+            android:progressDrawable="@drawable/rounded_pb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toStartOf="@+id/review_frag_2_tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <ProgressBar
+            android:id="@+id/rating_frag_1_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:progress="10"
+            android:progressDrawable="@drawable/rounded_pb"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintEnd_toStartOf="@+id/review_frag_1_tv"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/review_frag_5_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="290"
+            android:ems="3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_frag_5_pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_frag_5_pb"
+            app:layout_constraintTop_toTopOf="@+id/rating_frag_5_pb" />
+
+        <TextView
+            android:id="@+id/review_frag_4_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="112"
+            android:ems="3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_frag_4_pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_frag_4_pb"
+            app:layout_constraintTop_toTopOf="@+id/rating_frag_4_pb" />
+
+        <TextView
+            android:id="@+id/review_frag_3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="49"
+            android:ems="3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_frag_3_pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_frag_3_pb"
+            app:layout_constraintTop_toTopOf="@+id/rating_frag_3_pb" />
+
+        <TextView
+            android:id="@+id/review_frag_2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="31"
+            android:ems="3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_frag_2_pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_frag_2_pb"
+            app:layout_constraintTop_toTopOf="@+id/rating_frag_2_pb" />
+
+        <TextView
+            android:id="@+id/review_frag_1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="56"
+            android:ems="3"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_frag_1_pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rating_frag_1_pb"
+            app:layout_constraintTop_toTopOf="@+id/rating_frag_1_pb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
